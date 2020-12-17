@@ -120,6 +120,6 @@ def solution(n,b):
         n = z
 
         
-solution('19333',10)
-#solution('1211',10)
+#solution('19333',10)
+solution('1211',10)
 #solution('210022', 3)

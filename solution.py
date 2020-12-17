@@ -61,8 +61,10 @@ in length including new lines and and other non-printing characters.
 
 def solution(n,b):
     lcontrol=[]
+    z = ""
     while True :
-            
+        lcontrol.append(n)
+        print(lcontrol)   
         #calcolo x e y
         lista=[]
         for el in n:
@@ -106,12 +108,14 @@ def solution(n,b):
             pass
         for el in lcontrol:
             if z == el:
-                print(len(lcontrol))
-                return len(lcontrol)
+                print(len(lcontrol)-(lcontrol.index(el)))
+                print("Esco perche Z adessp vale = ",z)
+                print("index di EL : ",lcontrol.index(el))
+                return ()
             else:
                 pass
 
-        lcontrol.append(z)
+        print(" n = ", n, " Z =",z)
         n = z
 
 #prima della consegna eliminare queste tre righe sotto
