@@ -98,11 +98,10 @@ def solution(n,b):
             pass
         for el in lcontrol:
             if z == el:
-                print(len(lcontrol)-(lcontrol.index(el)))
-                return ()
+                return (len(lcontrol)-(lcontrol.index(el)))
             else:
                 pass
         n = z
 
 #prima della consegna eliminare queste tre righe sotto
-solution("220211", 3)
+solution("21011022", 5)
