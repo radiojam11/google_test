@@ -171,14 +171,14 @@ def solution(lambs):
         generoso.append(2)
         cont = 0 
     while cont == 0:
-        if sum(avaro)+(avaro[-1]+ avaro[-2]) < lambs:
+        if sum(avaro)+(avaro[-1]+ avaro[-2]) <= lambs:
             avaro.append(avaro[-1]+ avaro[-2])
         else:
             print("esco dai primo while e La somma dei numeri in Avaro e :", sum(avaro))
             cont = 1
     cont = 0
     while cont==0:
-        if sum(generoso)+generoso[-1]*2 < lambs :
+        if sum(generoso)+generoso[-1]*2 <= lambs :
             generoso.append(generoso[-1]*2)
         else:
             print("esco dai secondo while e La somma dei numeri in Generoso e :", sum(generoso))
@@ -189,5 +189,5 @@ def solution(lambs):
 
     risultato = len(avaro)-len(generoso)
     return risultato
-print("risultato di 143: ", solution(1))
+print("risultato di 143: ", solution(10))
 #print("risultato 10: ", solution(10))
